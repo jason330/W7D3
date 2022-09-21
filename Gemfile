@@ -36,7 +36,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'shoulda-matchers'
-end
+end\
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
@@ -46,7 +46,15 @@ group :development do
   # gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem "spring"
+  gem "spring-commands-rspec"
+  gem "guard-rspec"
+
+  gem "annotate"
+  gem "pry-rails"
+  gem "better_errors"
+  gem "binding_of_caller"
+
 end
 
 group :test do
@@ -54,8 +62,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  
-  gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
+  gem "l"
 end
